@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APA Monthly Insights — September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--red:#CE202E;--red-light:#fdeaea;--dark:#111;--gray:#888A8D;--gray-light:#f4f4f2;--border:#e2e2e2;--white:#fff;--condensed:'Barlow Condensed',sans-serif;--body:'Barlow',sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--body);background:var(--gray-light);color:var(--dark);font-size:15px;line-height:1.6;}
+a{color:var(--dark);text-decoration:underline;text-decoration-color:#ccc;text-underline-offset:2px;}
+.site-header{background:var(--white);padding:0 32px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;height:64px;border-bottom:1px solid var(--border);}
+.logo-row{display:flex;align-items:center;gap:12px;}
+.logo-row img{width:40px;height:40px;}
+.logo-product{font-family:var(--condensed);font-weight:500;font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:var(--dark);}
+.hc-name{font-family:var(--condensed);font-weight:500;font-size:18px;text-align:right;}
+.hc-period{font-size:12px;color:var(--gray);text-align:right;}
+.red-bar{height:3px;background:var(--red);}
+.site-nav{background:var(--white);border-bottom:1px solid var(--border);display:flex;overflow-x:auto;position:sticky;top:64px;z-index:199;}
+.nav-btn{padding:13px 18px;font-family:var(--body);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;border:none;background:transparent;cursor:pointer;color:var(--gray);border-bottom:3px solid transparent;white-space:nowrap;}
+.nav-btn.active{color:var(--red);border-bottom-color:var(--red);}
+.nav-star{color:var(--red);margin-right:3px;}
+.page{display:none;}.page.active{display:block;}
+.report-body{max-width:1100px;margin:0 auto;padding:0 32px 48px;}
+.report-section{padding:36px 0 0;border-top:1px solid var(--border);margin-top:36px;}
+.section-number{font-family:var(--condensed);font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--red);margin-bottom:6px;}
+.section-title{font-family:var(--condensed);font-weight:500;font-size:28px;margin-bottom:16px;line-height:1.15;}
+.source-line{font-family:var(--condensed);font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);margin-bottom:16px;}
+.draft-flag{display:inline-block;background:var(--red-light);color:var(--red);font-weight:700;font-size:11px;padding:3px 8px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;}
+.prose{font-size:15px;line-height:1.75;color:#333;max-width:760px;}
+.prose p{margin-bottom:14px;}.prose p:last-child{margin-bottom:0;}
+.kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px;}
+.kpi{background:var(--white);border:.5px solid var(--border);border-radius:8px;padding:14px 16px;position:relative;overflow:hidden;}
+.kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);}
+.kpi-label{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;}
+.kpi-value{font-family:var(--condensed);font-weight:500;font-size:30px;line-height:1;}
+.kpi-sub{font-size:12px;margin-top:5px;color:var(--gray);}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;align-items:start;}
+.data-card{background:var(--white);border:.5px solid var(--border);border-radius:8px;padding:18px 20px;}
+.dc-title{font-family:var(--condensed);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:14px;display:flex;align-items:center;gap:7px;}
+.dc-title::before{content:'';display:inline-block;width:7px;height:7px;background:var(--red);flex-shrink:0;}
+.bar-rows{display:flex;flex-direction:column;gap:9px;}
+.bi{display:flex;align-items:center;gap:10px;}
+.bl{font-size:13px;color:#444;flex-shrink:0;}
+.bt{flex:1;height:8px;background:#f0f0f0;border-radius:4px;overflow:hidden;}
+.bf{height:100%;border-radius:4px;}
+.bv{font-size:13px;font-weight:700;text-align:right;min-width:30px;}
+.comp-item{display:flex;justify-content:space-between;gap:12px;padding:8px 12px;background:#f9f9f9;border-radius:6px;border:.5px solid #eee;margin-bottom:6px;font-size:13px;}
+.tbl-wrap{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{text-align:left;padding:7px 8px;color:var(--gray);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:11px;border-bottom:1.5px solid var(--border);white-space:normal;vertical-align:bottom;}
+td{padding:8px;border-bottom:.5px solid #eee;vertical-align:top;}
+td.num,th.num{text-align:right;white-space:nowrap;}
+.tbl-cap{font-size:12.5px;color:var(--gray);margin-top:10px;line-height:1.55;}
+.note{font-size:13px;color:#555;line-height:1.6;margin-top:12px;padding:10px 14px;background:#f9f9f9;border-radius:5px;border-left:3px solid var(--red);}
+.rec-list{display:flex;flex-direction:column;gap:12px;}
+.rec-item{display:flex;gap:16px;padding:16px 20px;background:var(--white);border:.5px solid var(--border);border-radius:8px;border-left:4px solid var(--red);}
+.rec-num{font-family:var(--condensed);font-weight:500;font-size:22px;color:var(--red);width:28px;flex-shrink:0;}
+.rec-title{font-family:var(--condensed);font-weight:500;font-size:16px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px;}
+.rec-text{font-size:14px;color:#444;line-height:1.65;}
+.status{border-top:3px solid var(--gray);max-width:760px;}
+.site-footer{background:var(--white);border-top:1px solid var(--border);padding:14px 32px;display:flex;justify-content:space-between;margin-top:48px;font-size:12px;color:var(--gray);}
+.print-btn{background:var(--red);color:#fff;border:none;border-radius:5px;padding:8px 16px;font-family:var(--body);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;cursor:pointer;}
+@media(max-width:800px){.kpi-strip{grid-template-columns:1fr 1fr;}.split{grid-template-columns:1fr;}.site-header{padding:0 16px;}.report-body{padding:0 16px 40px;}.bl{width:150px!important;}}
+.report-cover{background:var(--white);border-bottom:1px solid var(--border);}
+.cover-eyebrow{font-family:var(--condensed);font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--red);margin-bottom:10px;}
+.cover-headline{font-family:var(--condensed);font-weight:500;font-size:40px;line-height:1.1;margin-bottom:8px;}
+.cover-sub{font-size:15px;color:var(--gray);}
+.pull-quote{border-left:4px solid var(--red);padding:14px 20px;margin:4px 0 20px;background:var(--red-light);border-radius:0 6px 6px 0;max-width:760px;}
+.pq-text{font-size:18px;font-weight:700;} .pq-src{font-size:12px;color:#666;margin-top:4px;}
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font-size:11px;font-weight:700;white-space:nowrap;}
+.b-green{background:#e6f4ec;color:#2a7a4b;} .b-amber{background:#fef3e2;color:#b45309;} .b-gray{background:#f0f0f0;color:#666;}
+.data-card.risk{border-top:3px solid var(--red);} .data-card.opp{border-top:3px solid #2a7a4b;}
+.risk-item{font-size:13.5px;color:#444;padding:8px 0;border-bottom:.5px solid #f0f0f0;line-height:1.55;} .risk-item:last-child{border-bottom:none;}
+@media print{ .report-cover{border:none;} .cover-headline{font-size:24pt!important;} .report-cover .report-body{padding-top:0!important;} .pq-text{font-size:11pt!important;} .risk-item{font-size:8.5pt!important;padding:4pt 0!important;break-inside:avoid;} .badge{font-size:7pt!important;} }
+@media print{
+ @page{margin:12mm;size:letter;}
+ .site-header,.site-nav,.print-btn,.site-footer,.red-bar{display:none!important;}
+ body{background:#fff!important;font-size:9.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+ .page{display:block!important;}
+ .page + .page{break-before:page;}
+ .report-body{max-width:100%!important;padding:0!important;}
+ .report-section{margin-top:14pt!important;padding-top:14pt!important;}
+ .section-title{font-size:17pt!important;margin-bottom:8pt!important;break-after:avoid;}
+ .section-number,.dc-title,.source-line{break-after:avoid;}
+ .prose{font-size:9.5pt!important;line-height:1.5!important;max-width:100%!important;}
+ .kpi-strip{grid-template-columns:repeat(4,1fr)!important;gap:6pt!important;}
+ .kpi-value{font-size:20pt!important;}
+ .split{grid-template-columns:1fr 1fr!important;gap:10pt!important;}
+ .kpi,.split .data-card,.rec-item,.comp-item,tr,.note{break-inside:avoid;}
+ .rec-item{padding:8pt 12pt!important;} .rec-text{font-size:9pt!important;line-height:1.45!important;} .rec-list{gap:6pt!important;} .note{font-size:8.5pt!important;padding:6pt 10pt!important;} .comp-item{padding:4pt 8pt!important;font-size:9pt!important;margin-bottom:4pt!important;} .data-card{padding:10pt 12pt!important;}
+ thead{display:table-header-group;}
+ table{font-size:8pt!important;} th{font-size:7pt!important;padding:4pt!important;} td{padding:4pt!important;}
+ a{text-decoration:none;}
+ .bl{width:170pt!important;font-size:8.5pt!important;}
+}
+</style></head><body>
+<header class="site-header">
+ <div class="logo-row"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAAcn0lEQVR42u2dfXRU5Z3Hv7/n3rkzk5B3kPckvCiIJJkEUKhaQHwp9a2t1q3bqmu3e7ZdtZXWs+qutm5rt/Yct9gV2/Xs6WnVyq4vuFVURKFAqwWEkDeIRCEkIyDQkGTIy8zcuff57R8zgAhzM5NkJpPk+Z7jCSbP3OQ+93N/b89zf5egdEq7p8wptAx9krBFMQOlDBQTYbJknkCEAjDyQMhikIeYtU9/lolsAofA6AUhwIwOQXSEGYcI8BPQIjXp103r8NyDje1qtqOiUQtbyYIJEZizBVEFgHIAs5hRDOIiAmXpRCAAfBIwAMwAg09971yTSSAQnZ7Yk8ewmMHgXjAdJ4IfQBOAeslc54Kxd27rjiMKwBGsncXzJuqIzCOhLQH4EgYu1EBFLopOgQTD5uhXTuFkCxA0in4FgAgzbPBxAj4AaDtLe7MFV/V8f/UnCsBhfm67in0XagJXgbEchHk60VgNBAmG1Yc1S+cFIBD0GJQ2GBZzGxjVIKwTTG+XtdZ8oAAcJto13Xe+btP1TPwVAPPcJDwnXaA95LglJg2EkyFAmGUQwC5iesXSeG1Vc+1HCsAM07aZF+dm2eY1YNzGwBI3iRwJRoR5mCAXXwKATgQBQphlFwGbQXiuVzPWL9z3/gkF4BCqvrhsOoR2G0Bf1wnnEwgRlpAj1F0JAC4S4GgI8RHAz0Paz5X7G5oVgGlUQ6mvAozvgHCLQaIgEo2bRlX2qBPBBYLJsoMZLxHhV2UttXUKwBSqtqS8UkC7F8RfNUh4TWZIjC7wzraKBIMIJssgmF6SsJ/wtdbXKAAHUXWlZbMI+n0Afz0K3sh1swNxzwaJKIig5xnW4xUtDU0KwAGocdKCIsuIrADoLoMoX4GXDIjcCfBTuulaOefwjuMKwCT/rvppFX8LpkfcJGaGlavtl2t2EyHMch+IHyk/ULcayLxJzDgAdxX75mgCj+lE1wPRlQKl/uvkSo/FvNaWeKDKX9uoADyHNmGxXlgauIuAHxokCsOsbN5gXmR3ND5sZ+DH7S15Ty3FFksBGFP1lMqZhs5P6CSuHU4rFsNNJ1dYLJZvmBbdO+9gzb5RD2BNacUtOmili8SkEKsUIx3ykECE5WELvKKype7FUQngX6Ys9GbrwZ8IiO8TgSwV66VVOhGYwRLyFz2W9+HPHdwWHDUA7pw+r9iQ8jduoitDKtYbUuvjIYEw8wZTiL+f31ztH/EA1pdULgLxswaJmcrlZo5LNlnuA9Pt5a01W9P5u0U6f1ndNN/NRHhTJ1LwZZBCLKETzSTCm3XTfDePSABriivu1hiriZBvqngv42Qygwj5GmN1TXHF3SMKwNrS8oddmnhSglwq2chcWcyQIJdLE0/WlpY/PCJiwNqS8sfcQr8/otZxh41O7jsMS+vnvtb6B4YtgLUlvsfcQtxvqkx3WGbIBgmEpfy5r7X2gVTCnkLLp+AbrmIAJku4hbi/tqT8sWEFYG1p+cNuoSv4RgyE+v2pigkH3QXXFFfc5dLEKnsEPBCkdBoSjQgRW95d6a97KmMB3FXsu9kQWC1BLmX7RlpiQiBwxJZ0q89fsybjANxZUrXQTbyOgHxLwTcipYPAQGeYafn81l3bMiYGfH/GRVNdJH+vkYJvJMsCQyPku0j+/v0ZF03NCAAPlCz2GLb+WzeJGWqFY+TLZIabxAzD1n97oGSxZ8gB7KTOR72kLVNru6NHIZbwkraskzofHdIYsG6a72aN6QUbLJTtG4WZMUjaxH9TcaD25bQDWF9cNp2F9p5GNEGt747SpIQINvMRkval/W0P0i8XvAmLdSnEKjcJBd9oTkqi8eAEKcSqTVispw3AvNKOf/KQtlzFfUohlvCQtjyvtOOf0uKC60rLZgHaNgHKV0+vKSEaC0KCOwF7YbLtQJKygAwICe1xNwkFn9Ip2WC4SeRLaI9zkkwlNbimxPc1g+g65XqVzuWKDaLrakp8X0uJC949Z06h1Wvs0Immq8RDKV5WbDE361nmgrmNib2KImELaPUa3/eSUPApOWbFXhLTrV7j+4NqAXfPqJxpW7yTCHnK+Sr1ZdGYEdB0mj93f9+tPxKygBFbPugWQsGn1KckALcQeRFbPjgoFrB6WmW5zrydAI8CUClhKwiELKJL5h2oqR+QBRRS3ucmoeBTSs4KkvAIKe8bkAWsmz6vjKS9HYBXAaiUrBUEEGShXVLRXN3QLwvItn2PQULBp9QvK2iQ8Nq2fU+/LGBNSUWpAGqJRJ56vkOpf1aQwCwDEvBVtta1JGUBiegOj9AUfEoDsIIMj9DyiOiOpFzwu7Nm5TD49oiCT2mAikTfSXr7u7Nm5SQMYLbp/YJbrXooDYJiewan55jeaxJ3wYzbafS+TF1pkEUgSMYdCQG4c+pFMwAsjagdL0qD5YajLC2NseUMoC60G70kshV+SoOXjABeEtm60G50BJABwUQ3qcxXKRUZMRPd9NkNq2f8T0PJ3AsIVKVej6U0+G6YQaCqhpK5F8QF0CL9Gg8Jj8JPabDFADwkPJL0q+MCSIzlCj6lVELIjC+eE8DtJXMmgLBA1f6UUiWLGSAs2F4yZ8JZALqFPt8gKlRPuymlSjYYBlGhW+jzzwKQmZZoqvislGJpIDDTkjMA5OiumEWq/KKUasUYWxRjLgpgw7RLzgNotq34U0q1G2YAoNlR5mIAWhyerUHFf0rpiQM1UKHF4dmfjgF9Bqn4Tyk9irHmOwWgACrUtCilUyeZE9FgkGepBEQpvYkIz2KAxJ4pcwrANNVW86KUtjgQANPUPVPmFOgW9ElMPFYqA6iULgvIDCYea0GfJKQmigXIq/hTSpcYgAB5pSaKhQaU6ioDVkqzdCJoQKlgoFjhp5RuUdQSFgsQJiv3qzQUbhiEyYKZJ6jpUBoSCJknCBAVKguoNDQWkAoFMeeqPahK6bd+ADHnChCy1LvNldJvARkgZAmA3Ao/pSFxwSC3ALOupkNpiPywLtQsKA2lFIBKCkCl0QwgkaWmQWlIRGTpAIcJNLoLMX0VQs+1WaM/n1E6PT0AGBwWYPSqZpRK6QeQAEavzkQnKLY1YbRJmibyv7AU47/77bhjgo2NOPjgT6P3LBFYSmj5OSh98jFoeflxLar/Bz9EqGkfyKWqXPEcBINO6GBup9HqLqSEPrYQWRVzHbxzJHZ3xuaIAdI1ZPnKoOXmxQ+us7x9u+lR7oLB3C6I6Miongnp3AuWI1ac70ecY0oFXwJWkI4IMA6pCFBpaCwgDgkC/OpeVUp74QGABPy6DbQod6GUbsX6ULYIYUu/BAeVGx6hZiaZ76fR/UpwUNjSr+uwDltstAlBU+1MsoTM4IgFtu1YBUTEvi2jmagmQLoLEHRmwuCUVOg6SEvz6qNksBVxvugJ/l1s24BlO15ZcrliNQ4G2/EXuUjTTxfLmcGRCNiWUTqiNZLYrlEC6TpI1wZtSgQRWKJNR+SwftHBxo660oqPNWRIdwQpIcMmtJwseMtnI8tXBs/506AXjQXpLtiBDoRb/Oiprkdv7W7YgS4Iww0mxsQH74HnggviHrrt2RfQ9cc/gQwjPfeQaSJv+VIUfe1mcLybmxlHVj6FYEOTY82QzQjGLKrCuH/8plNWiaO/+m90v7sDYy5fgAkr4tc3j6z8NXq21wGSIbK9yF5YieyqChhTJ0FkZ4MjJiJH2xD64EP0VNfBbD0EkBiUuqYGwCb++KKDjR06AVwLahKgzw21bZahMPSCXBTd8VUU3vIleOdcCBLx77xQUxP++rvVaP/fV6MX6HPzkV1ZFXd81+b3cMKW6Vv3EQTz4GHkLrscoPgWLtxyAL01u50BlDYKvnoD8q5aEn/+entw8OFHo0Z1XBFyLrss/s343IuQvUHkX38lJvzgbmSVl8Udawc6EXhnE4791+8Q3PMhhMczsGmJmtkmAlggmo3UDbW7laEQcpddipmv/A5TfvwQsubOdYQPADyzZmHqz/4NpU8/Dj0/F7I31LcLS2eso7sQ3N2EE5v+5Dgu78ol0PJygXj9UaSEPrYAOZctcjxO4O2NCLceAjStz/qmHejGuL+/FdN+s8oRPgDQ8vJRePOXcf6aZ1B0642Q4fDAjU2MuZO3Za05VPFfLP4Yf9ffYfpvn4J39uykD5F39ZUo/s+fQnjdmZcH2BLta15zHOOeVoqsyrmQcYrbMhJBdlU5jMmTHY/T+dr6hJwY2xJ5V34ekx99KBpHJ+o68/JR/PhPUfS1GyFD/YcwxlrtKQB1cu+1we1D0aScwybGf+9bmPTQ/SBX/2OzvGXLkFXhyzgAheFC15ZtMA8edDCVAvnLr4hvtZiRe/US54vq96N7ezWE0TdQJAhjv3kbhLsfrlRomPzIA/DOmRl3lcg5/iPY4Had3HtPAVh2YPsxgPdqaeZPhkLI/8pyTLzvu4Pj8jQNmUeggNXWgc4333YclnPF56EX5Z0NoZTQC/OR+/lLnd3vO5tgHQ8AIoEsn6jP8MYRotw8jL/nW0A/3qgaZYz3RpmLARhLureKNFpAtmy4S6dg8iMPACIDwRnMWFDT0PmHdeCIGd8NT52K7PkVZ7lhjljIqiqDMXWKY2zb+cY7Z96AKd5gknflFXBPmwq2kourY4xtjTF3eks+EW9OZ5Nyti2Mv+dbcI0bl+gnYLW1wTx0GFZHx/AC0KWjd08TenbuchqFvOVXnbWJgaVE3lWLAQfjENq7F711jWdk0cJILh62u7thdRyHDIcSA2nMGGRfXBmtcSbze8Ag4s2nSqCnSgHS2skk2vU0dMtny4Jn1nQUfOm6vsdGTLSveRXtL7+G8P5WcDgCke2BZ/b5KPqbLyP/2mscSxyZQSCBQxG0r1mLMYsWxh2Wu/hSuMYVwQ50RV2plNAL85Cz+DLn5OPNdyB7ghDe5GO67u3v49jTv0No7z6wGYEYk43cZZdhwne/HX+/Y0zesjnA6j8kFf+ZzO0mWzvPAvCS1sYjNSW+Hbqga1K9IsKRCPKvvRoiK9txnNXeDv+Kf0Fg/eZozKLrIALs7h6YB4+ia+O7yP/yO5j6s0eg5eZmNoOGgRMb/4zIsWNwnXfeOce4Jk5E9sIqdK7dAOFxQ0YsjPHNhbu42DGODqzfBNKTLxB3b92O5jvugn2iJ7aCAuBIG47uboLpP4TSX690PK4xeWJSK0s6ESzJOy5pbTxy2iV/GgzCupRHgcwQHg9yr7jceZgZjsK3bhOE1wtyG9GTFQKkaRAeN8hwo+Ol1+H/wb86xleZEQcKRI78FYG3NzqOy//ilae9rZTIvWqxYzzXU12D0IfNyQMoJY7+59OwT/RAeD0gXQNpGsilQxuTjcBbm9Gzq6aPZCQX0ETCex8pxtiZMeGnCWVrfZhlKJUQspRwTRwHz/kzHMe1v/wHBNZvhsjOcjwjkZ2NzrXvoP2l/8v8WFAIdLzyhmNBPOeyRTAmjANHLGj5uchd0of7XfsW2LSQbP4YOXYMvbubINzGuUMGM4KeHTV9nI+ORH8xAQixDOlsrY8L4N7W3R9J8C5XKjMo24YxZRK0nFyHGDGC46tfiS6YJ2RddLQ99xLYzHAr6HKht2Y3gvUN8d3U2HEYc+kCyN4gsnwXwV1aEn8qOztxYtN7UfeJ5AGUPT3xrSsRIp98Mmjn7iICg3eVte7+MC6AtwA2Ma9JZTmGJUM/b6zjGPPQYYT3HUjYrZBLR3h/C8J+f8YnIzIYRsf/ve5c4vjiVQCiqxVOCVbXu1thHjzcr50qMmxGd7/0kSwOlgQIxLyGABkXQACwpP1qkGVPyvJKZmhjvM7Jx7E22L2hJNwKQYZNWG1tme+GDRc612+C1Rm/lDRm4QJ4L7oAOZd/rk/3C5nxpwwBIMiyx5L2q+f62Rma//Ge/QA2uVJV2iDqu3ipayCRjBWO7VvrhytKfzKiwfR/ghMbt8Q//YJCjP/eP8BwcL/m4UPo+svOhJbehloxljbF2HIGEAAE4ZlUNq20A92OPzcmT4SW77A75FxWNTcHxpQpGA4iInSsWeu4lFV4800Q7vjF5BMbtsBqa09s6W2IxWAIwjPxrOPZsYURXB9m2ZyK94dEyxHHwDK+FXSddx6yL66ETDCpkGETYy72xa2vZaIb7nm/FsG9H/bvAFKi8/W3T+0Sz2TpRAizbO4ygusTBvCypqYuAj3rSkEyQkKDefATWMePO8Z0533nTohsL9BHoAxbQmR5cN637xw+/ViIYHf3ouPVN/r18eBHH0U3sA4H9wsCgZ69rKmpK2EAo16NnwlJOzDoGbEmYLW1I7j7A8dh2ZWVmPTQCrC0HR4Ot8C2hUn/8l1kz5+H4SRy6Qi8sQF2d3fSnw2s2wC7qzvjbzgBQkjaAWZ+xilBOacqW+taGPRiKl5kzZaNwPqNfY4bd+dtKHny32FMnQAZDEX/C4VP/duYMh7Fv3wU4751J4abSNcRbvaj68/vJTd3ZhiBdRuT2kg6VDKIYINerGyta4nrovvI2J40pf0NAXgHM9snw0Dg7c2YsOIoXOPHO44t+PINyFl8KQIbNqN3Vz2sQCf0vHxkVZUjb9kS6EVFGK5iyeh4eS3yl1+T8Gd6ausR2rt/UJ9SS1XpxWQZ1DTtSccY0emHFc3VDTUlFS97hXZbiAcPQdIEIof/irZnVmPiP6/oO5AtLELRLTeh6JabMJIkDBe6/7ID4QMH4J42LaHPdK59CzJs9mvnS3qtn0BQ2i9XNlc39AWqc8IlxONhlqHBzreE20Dbb/8XwT2NGLUSAlZHAJ1r1yVWvuo6gRN/fDfj650CQJhlSArxeCJjHTXvQE29BK82BjvlFwJ2oBsf3/8I7EDnqGWQdBc6XlsPGQr2Obb7L9ththzMePdrkIAEr553oKZ+wAACgEsTPwtLGRhsK0huAz3VDWj93oOwu7oGFk+FQ7Dajw8/AF06Qnv3o+u9rX2O7XjtLXCGv9peAAhLGXBp4meJju9Tc/fX7GPCKncKCp/C40Hgrc048M27ED5woN/H+eSJVQju+WCYJiMSsrvXcUzk6FF0v/c+RKLud4hWSNwkwIRVc/fX7Bs0AAFAzzJ/EUzR6ojwetD93k7su+nv0PbM75OqjVmdHTj0o5/i6C9/Myzb4bJtw5g6ETl9PPV24o9bEDnaFt0A2udBGcLtTfu56EQIsmzWs8xfJPyZRAfObWxs31Xie5gIz6fEFbndiLR14OMH/x1tz7yA/BuuQe6Sy+GeXnpWK1wZ7EW49WOc2LgZ7S/8AaEPW0CGDnIbfWTfWkLfO7NkdA6LQ3BcpwXRGU2THFkxI8hdcin0ggJHoDpfX5/U0lu/zivpYxifnRZIxsNzGxvbE/47k7pbAVFb6nvVS+K6wSzLnPV7IhbYsiCyPHCNHwvXxPHQ8nNAmg67uweRT44hcugI7O6eWOcmHWDGmMsvgcuhLthTuxvh5pZTE8u2Dfe0YmRXlsd3fcfb0f3uttNTxQxyG8i94nLnzQKb34Pd0ensChlgaWHG/zyNnEvjb70K7duHD6+9FRyKJAR29LxKkF1Z5nxef94WdzWFbRvu6cXI9sWfG+t4B7r+vBUggocEgixf97XU3khJbBJL2p/WlZbNArRtApSf8sc4maObJqWMdpdiBhEBWvS5kM9OHpsm2KEnCrlcZ93VbNuO/Z5JiLO7aTFDhk049cEQhtFnHMaR6NOBF7zxgmPDn6NPPY3DP1kJ4U3crfbrvPp5DA0ECe4E7IUVLQ1NSbntZJmoaGlo2lVa/iM36b9MeT9BoljJIbGmIWQYSd9RpGnJd1QggvAMvA8NWxbyvrDUET62Iuh8c2PSDx3167z6eQwXEXrZ/lFVkvAllYR8WoGWgl+F2F7nIfWquYFYd22MF/nXXu04rLd+N0KNH/brsct0yEMCIbbXBVoKftXfsk3SWootlpDy7jDLI7p6JVU/49wIvL6L4Jk9y3Fc5+vrIYPhjNz5Etvrd0RIefdSbLHSBiAAlPsbmkG4BwypEOxP+UWi4LqrHZsEyZ5unNjwp4wsL8VesyBBuKfc39Dc7xLcQP6IigO1L0cgVypXnKRiDSdzr1rqOKx7+w6Em/0Z6X49JBCBXFlxoPblgRxnwOTkc/5DQbY3KgiT4M+MYMyieTAmOz/D0vHaW30+OjlU8AXZ3pjP+Q8N9FgDpmZa65aQqVl3hlnuN1Q8mJj7EoSCrzg3ZrKOt6HrT9syzv0a0bhvv6lZd05r3RIa6PEG5ewu3r/n450lVd8Q4HU6KN+CevFN/NjPjrYmmVGKyLGjcQOswJvvwDrS1ufqTlqTDhBsRmeExTcu3r/n40GLJQdLtcWVN2mC/4dBLqkgjEMgQC4NIicr/mOnBMjeEDgcyZjsV4BA4Igt6Vafv2bNoCYzg6ma4oq7XJpYZTMrBJ1kO9+iJChj4CMAGhEitry70l/31KBn04Ot2tLyh92k/9hkZQeHfbyK6AbTMFs/9LXU/yQVx0+JakvKH3ML/X4F4QiAT1o/97XWP5Aa154i+VrrHwhL+XODBFRuPJzhkymDL6UW8LOWMMJyODRyUopZJVeKLV/KLeAZlpCtHwoiKFs4HOAjCKJozJdi+NJiAT+VHd/tEvQLELks9YLsjJROBGKYppQ/qPTXrUqXq0+b6qb5bhZM/60R8k0FYUbJoFiRmfgfqga4vpuxAAJAfUnlIhA/a5CYmcpt/UqJy0MCJst9YLq9vLVmazp/d9p3EJS31mw1hbbMZN7gVRnykGe6XhIwmTeYQluWbviGBEAAmN9c7e+23DeE2P4PAWK1qXVo4j0B4hDb/9FtuW+Y31ztH6qbYEhVU1pxiw5a6SIxSbnk9LncCMvDFnhFZUvdi0NthYdc1VMqZxo6P6GTuNZihq3WTlIiDRR9XRbLN0yL7p13MLHuBSPOBX9W8w7W7GtryfuSyfJeBrd7VGw46FbGQwIMbjdZ3tvWkvelTIAvYyzgp7Wr2DdHE3hMJ7oeACKqXDMgnXzrlcW81pZ4oMpf25hpN0dG3rT10yr+FkyPuEnMDDNDbWlI1rUR3NHdy/tA/Ej5gbrVQOZNYkZ7usZJC4osI7ICoLsMonxTrScnFFMZ0dJKJ8BP6aZr5ZzDOzK2b92wCLXqSstmEfT7AP66QcKrQHQCTwYBep5hPV7Rj04FCkAH1ZaUVwpo94L4q1EQlWsWIBhEUfCYXpKwn/C11tcMpwRp2Kmh1FcBxndAuMUgURABY7RtcNCJ4ALBZNkBxosg/LqspbZuOGbow1b1xWXTIbTbAPq6TjifQBjJ+w5P7tNjMCzGRwA/D2k/N5DOBArAQdC2mRfnZtnmNWDcxsASN4kcGbOKcgRAF1s2Q5hlFwGbQXiuVzPWL9z3/onhfu1GXL1313Tf+bpN1zPxVwBUuUl4GcBwWmE5uWJBAMIsgwB2EdMrlsZrq5prPxpJ12tELzg0lFReKImvBmM5CPN0orGxZoqwOPoaUc6AC0Ag6BRNKOyo5W4DoxqEdYLp7bLWmg9G6jUaNSteO4vnTdQRmUdCWwLwJQxcqIGKTq4USDBsjn7lFE62AEGLwQZEV3ps8HECPgBoO0t7swVX9Xx/9Sej4bqM2iXX3SULJkRgzhZEFQDKAcxiRjGIiwiUddIFnoSRAXAfVvOkNSM6PbEnj2Exg8G9YDpOBD+AJgD1krnOBWPv3NYdR0bjdVBr/p+GcsqcQsvQJwlbFFtAqQCKiTBZMk8gQgEYeSBkMchDzGc09mMim8AhMHpBCDCjQxAdYcYhAvwEtEhN+nXTOjz3YOJd5Ee6/h9FBxzstRKMDwAAAABJRU5ErkJggg==" alt="Allyn logo"><div class="logo-product">Insights</div></div>
+ <div style="display:flex;align-items:center;gap:20px;"><div><div class="hc-name">Allied Pilots Association</div><div class="hc-period">Monthly Insights &mdash; September 2026 &middot; Draft</div></div>
+ <button class="print-btn" onclick="window.print()">Download PDF</button></div>
+</header><div class="red-bar"></div>
+<nav class="site-nav"><button class="nav-btn active" onclick="showPage('insights',this)"><span class=nav-star>&#9733;</span>Insights</button><button class="nav-btn" onclick="showPage('pr',this)">PR</button><button class="nav-btn" onclick="showPage('listening',this)">Social Listening</button><button class="nav-btn" onclick="showPage('seo',this)">SEO</button><button class="nav-btn" onclick="showPage('social',this)">Social Media</button><button class="nav-btn" onclick="showPage('poll',this)">Poll Results</button><button class="nav-btn" onclick="showPage('web',this)">Website Analytics</button></nav>
+<div id="page-insights" class="page active">
+ <div class="report-cover"><div class="report-body" style="padding-top:36px;padding-bottom:28px;">
+  <img src="data:image/png;base64,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" alt="Allyn logo" style="width:56px;height:56px;margin-bottom:14px;"><div class="cover-eyebrow">Allyn Insights &mdash; Monthly Report</div>
+  <div class="cover-headline">Allied Pilots Association<br>Monthly Insights &mdash; September 2026</div>
+  <div class="cover-sub">Sept 1&ndash;30, 2026 &middot; Prepared by Allyn &middot; Confidential</div>
+  <div class="draft-flag" style="margin-top:12px;">Draft &mdash; data through Sept 29&ndash;30, 2026. Final numbers follow once the month closes.</div>
+  <div class="kpi-strip">
+   <div class="kpi"><div class="kpi-label">News placements naming Silva or Tajer</div><div class="kpi-value">71</div><div class="kpi-sub">of 98 APA placements &middot; baseline month</div></div>
+   <div class="kpi"><div class="kpi-label">Social engagements</div><div class="kpi-value">32,130</div><div class="kpi-sub">34 posts on FB, IG &amp; LinkedIn &middot; baseline</div></div>
+   <div class="kpi"><div class="kpi-label">Negative share, pilot &amp; contract talk</div><div class="kpi-value">15%</div><div class="kpi-sub">Down from 24% in August</div></div>
+   <div class="kpi"><div class="kpi-label">Est. organic search visits</div><div class="kpi-value">8,921</div><div class="kpi-sub">+9% vs. August &middot; Semrush estimate</div></div>
+  </div>
+ </div></div>
+ <div class="report-body">
+
+ <div class="report-section" style="border-top:none;margin-top:0;">
+  <div class="section-number">The objective</div>
+  <div class="section-title">What This Report Measures Against</div>
+  <div class="pull-quote"><div class="pq-text">&ldquo;APA members are informed, engaged, and vote.&rdquo;</div><div class="pq-src">APA Section 6 Negotiations Messaging Guide (APA_Messaging_Guide_7/27/26), July 2026</div></div>
+  <div class="prose"><p>September had three moments that put APA in front of members and the public: the 25th anniversary of 9/11, Capt. Nick Silva&rsquo;s public questioning of American&rsquo;s leadership as Section 6 talks opened, and Senate passage of the pilot mental-health bills APA backed. APA&rsquo;s leaders carried the coverage, and APA&rsquo;s own channels drew their strongest response from member-life and remembrance content. The tone of public conversation about American&rsquo;s pilots and their contract improved from August.</p></div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Scorecard</div>
+  <div class="section-title">September at a Glance</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Area</th><th>What we measure</th><th>This month</th><th>vs. last month</th><th>What it means for the objective</th></tr></thead><tbody>
+   <tr><td><strong>PR</strong></td><td>News placements naming APA, Silva or Tajer</td><td>98 placements, 81 outlets; 71 name Silva or Tajer</td><td><span class="badge b-gray">First month</span></td><td>Leaders are the voice of APA&rsquo;s coverage, which members also see. Eleven placements make APA the story.</td></tr>
+   <tr><td><strong>Social listening</strong></td><td>Tone of public talk about AA pilots, the contract and leadership</td><td>3,362 mentions; 15% negative</td><td><span class="badge b-green">Tone improved</span> from 24% negative; volume &minus;8%</td><td>Less hostile public conversation as Section 6 opens.</td></tr>
+   <tr><td><strong>Social listening</strong></td><td>Mentions naming APA or its leaders</td><td>75</td><td><span class="badge b-amber">Down 14%</span> from 87</td><td>Small counts; more positive (19 vs. 3) but fewer overall.</td></tr>
+   <tr><td><strong>SEO</strong></td><td>Branded search rankings and est. organic visits</td><td>All core branded terms #1; 8,921 est. visits</td><td><span class="badge b-green">Up 9%</span>; rankings flat</td><td>Members and the public searching for APA land on alliedpilots.org.</td></tr>
+   <tr><td><strong>Social media</strong></td><td>Engagements and engagements per post</td><td>32,130 engagements on 34 posts</td><td><span class="badge b-gray">First month</span></td><td>Member-life content engages most; Section 6 posts sit mid-pack.</td></tr>
+   <tr><td><strong>Poll</strong></td><td>Member survey (UNH)</td><td>Sept 2025 baseline: 81% say APA is good value; 58% rate BOD communication good</td><td><span class="badge b-gray">No new wave</span></td><td>Members value APA but feel less informed. BOD communication fell from 77% in Feb 2025. October&rsquo;s poll will show whether that has moved.</td></tr>
+   <tr><td><strong>Website</strong></td><td>GA4 sessions, engagement, key events</td><td>Access pending</td><td><span class="badge b-gray">&mdash;</span></td><td>Needed to see whether coverage and posts drive members to APA&rsquo;s site.</td></tr>
+   </tbody></table></div>
+   <div class="note">APA hasn&rsquo;t set numeric targets for these measures, so the scorecard reports direction only. Most areas start their month-over-month comparison in October.</div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Pillar check</div>
+  <div class="section-title">How the Messaging Pillars Showed Up</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Pillar</th><th>September evidence</th><th>Where to look</th></tr></thead><tbody>
+   <tr><td><strong>1 &mdash; Masters of Our Own Destiny</strong></td><td>Capt. Silva is named in 36 news placements and Capt. Tajer in 35, including <em>Forbes</em>, <em>The Dallas Morning News</em> and a Reuters story on the Senate bills.</td><td>PR</td></tr>
+   <tr><td><strong>2 &mdash; Talking With You, Not At You</strong></td><td>Member-life posts drew about 1,950 engagements per post, the most of any theme. The new-hire dinners post hit a 58.7% engagement rate, and &ldquo;Meet the Negotiators&rdquo; opened at 36.1% on Facebook.</td><td>Social media</td></tr>
+   <tr><td><strong>3 &mdash; Accountability, Not Defensiveness</strong></td><td>Little measurable activity. The Sept 1 town hall clips, which include a 12-minute Aggressive Pick-Up segment, were the only APU content. Monitoring found almost no public APU discussion.</td><td>Social media, PR</td></tr>
+   <tr><td><strong>4 &mdash; They Deserve Better</strong></td><td>No measurable activity this period. No flying-public messaging ran in September.</td><td>&mdash;</td></tr>
+   <tr><td><strong>5 &mdash; If You&rsquo;re Not at the Table, You&rsquo;re on the Menu</strong></td><td>The leadership critique reached business and aviation press. Headlines framed it sharply (&ldquo;blasts CEO&rsquo;s leadership,&rdquo; &ldquo;calling for a new CEO&rdquo;), and 18 of 21 placements scored negative. No analyst or investor-outlet coverage turned up, and share of voice vs. ALPA isn&rsquo;t measured yet.</td><td>PR</td></tr>
+   </tbody></table></div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Watch list</div>
+  <div class="section-title">Risks and Opportunities</div>
+  <div class="split">
+   <div class="data-card risk"><div class="dc-title">Worth watching</div>
+    <div class="risk-item"><strong>Headline framing.</strong> The guide calls for a media tone that is &ldquo;reasoned and methodical, not combative.&rdquo; Coverage of the Sept 16 comments leaned the other way in its headlines.</div>
+    <div class="risk-item"><strong>The contract as a competitive issue.</strong> Two pieces argued the pilot contract is costing American in Austin, a framing that may resurface during talks.</div>
+    <div class="risk-item"><strong>Political giving.</strong> The APA PAC appeared in a story about donors to lawmakers who made remarks about Islam.</div>
+    <div class="risk-item"><strong>Pilot conduct stories.</strong> A viral jet bridge confrontation identified an American pilot by his APA lanyard.</div>
+   </div>
+   <div class="data-card opp"><div class="dc-title">Opportunities</div>
+    <div class="risk-item"><strong>The Senate mental-health win.</strong> Capt. Silva&rsquo;s quote ran in 32 placements, but APA didn&rsquo;t post about the bills on Facebook, Instagram or LinkedIn in September.</div>
+    <div class="risk-item"><strong>Member-life content.</strong> It is APA&rsquo;s most engaging material and a natural carrier for Section 6 updates.</div>
+    <div class="risk-item"><strong>October poll.</strong> This is the first read since the September 2025 baseline, when only 58% rated Board communication good, down from 77%. Repeating that question will show whether Section 6 communication is closing the gap.</div>
+   </div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Recommendations</div>
+  <div class="section-title">What the Data Supports</div>
+  <div class="rec-list">
+   <div class="rec-item"><div class="rec-num">01</div><div><div class="rec-title">Share the Senate bill win with members</div><div class="rec-text">The mental-health bills APA supported passed the Senate with Capt. Silva quoted in 32 placements, yet no APA post on Facebook, Instagram or LinkedIn covered them. A member-facing post or video message would turn earned coverage into member information.</div></div></div>
+   <div class="rec-item"><div class="rec-num">02</div><div><div class="rec-title">Pair Section 6 updates with member-life content</div><div class="rec-text">Member-life posts drew about three times the engagement per post of Section 6 posts (1,952 vs. 648). Keep &ldquo;Meet the Negotiators&rdquo; running, and place negotiation updates alongside the events and people members respond to.</div></div></div>
+   <div class="rec-item"><div class="rec-num">03</div><div><div class="rec-title">Give Pillar 3 (APU) a visible moment</div><div class="rec-text">Apart from the Sept 1 town hall clips, the accountability pillar had no measurable activity. A short update on APU fixes would give members something concrete, which the guide calls &ldquo;actions speak louder than words.&rdquo;</div></div></div>
+   <div class="rec-item"><div class="rec-num">04</div><div><div class="rec-title">Check the leadership message against the guide&rsquo;s media tone</div><div class="rec-text">Before the next statement on American&rsquo;s leadership, weigh how September&rsquo;s headlines read against the guide&rsquo;s &ldquo;reasoned, not combative&rdquo; standard and its advice to let third parties carry the strongest lines.</div></div></div>
+   <div class="rec-item"><div class="rec-num">05</div><div><div class="rec-title">Tighten monitoring before October</div><div class="rec-text">Most of what four Meltwater searches return is noise. For example, 212 of 214 &ldquo;APU&rdquo; results were unrelated. There is no ALPA volume search, and the listening topic still catches World War II &ldquo;Allied pilots.&rdquo; Fixing these makes next month&rsquo;s trends reliable.</div></div></div>
+   <div class="rec-item"><div class="rec-num">06</div><div><div class="rec-title">Close the data gaps</div><div class="rec-text">Connect GA4 and Search Console, share the 2025 poll raw data and the October questionnaire, and have IT review the test sites appearing in Google (SEO tab).</div></div></div>
+  </div>
+ </div>
+ </div>
+</div>
+<div id="page-pr" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">PR</div>
+ <div class="section-title">Earned Media</div>
+ <div class="draft-flag">Draft &mdash; data through Sept 29, 2026</div>
+ <div class="source-line">Meltwater &mdash; Sept 1&ndash;29, 2026 &mdash; exported Sept 29, 2026</div>
+ <div class="prose">
+  <p>APA was named in <strong>98 news placements across 81 outlets</strong> in September. Coverage came in three waves: the 25th anniversary of 9/11 (Sept 5&ndash;11), Capt. Nick Silva&rsquo;s public questioning of American Airlines&rsquo; leadership (Sept 16&ndash;18) and Senate passage of the pilot and air traffic controller mental-health bills (Sept 24&ndash;29).</p>
+  <p>APA&rsquo;s leaders carried most of it. Capt. Silva or Capt. Dennis Tajer is named in 71 of the 98 placements. Eleven placements make APA itself the story, all but one tied to the leadership critique that began with <em>The Dallas Morning News</em> on Sept 16.</p>
+ </div>
+ <div class="kpi-strip">
+  <div class="kpi"><div class="kpi-label">News placements</div><div class="kpi-value">98</div><div class="kpi-sub">81 outlets &middot; baseline month</div></div>
+  <div class="kpi"><div class="kpi-label">APA is the story</div><div class="kpi-value">11</div><div class="kpi-sub">87 more mention APA &middot; baseline month</div></div>
+  <div class="kpi"><div class="kpi-label">Silva or Tajer named</div><div class="kpi-value">71</div><div class="kpi-sub">Silva 36 &middot; Tajer 35 &middot; baseline month</div></div>
+  <div class="kpi"><div class="kpi-label">Combined outlet reach</div><div class="kpi-value">230.3M</div><div class="kpi-sub">Estimate &middot; see note &middot; baseline month</div></div>
+ </div>
+ <div class="note"><strong>What&rsquo;s counted:</strong> online news and print placements that name APA, the Allied Pilots Association, Capt. Silva or Capt. Tajer, after removing keyword noise from the Meltwater searches (for example, &ldquo;APU&rdquo; matching auxiliary power units). Social posts that Meltwater also captured (16 from APA&rsquo;s own accounts, 9 from partner organizations and 12 from other accounts) are left to the social tabs. <strong>Reach</strong> is Meltwater&rsquo;s estimate of each outlet&rsquo;s audience, added up across placements. It is not a count of people who read these articles, and four outlets (<em>Forbes</em>, <em>Yahoo! News</em>, <em>Clar&iacute;n</em> and <em>AOL</em>) account for 73% of it.</div>
+
+ <div class="report-section">
+  <div class="section-number">Coverage by story</div>
+  <div class="section-title">What September&rsquo;s coverage was about</div>
+  <div class="split">
+   <div class="data-card"><div class="dc-title">Placements by story</div><div class="bar-rows"><div class='bi'><div class='bl' style='width:250px;'>Leadership / CEO criticism (Sept 16&ndash;18)</div><div class='bt'><div class='bf' style='width:66%;background:var(--red);'></div></div><div class='bv'>21</div></div><div class='bi'><div class='bl' style='width:250px;'>9/11 25th anniversary (Sept 5&ndash;11)</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>32</div></div><div class='bi'><div class='bl' style='width:250px;'>Senate mental-health bills (Sept 24&ndash;29)</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>32</div></div><div class='bi'><div class='bl' style='width:250px;'>&ldquo;Meowing&rdquo; pilots (Sept 11&ndash;25)</div><div class='bt'><div class='bf' style='width:16%;background:var(--red);'></div></div><div class='bv'>5</div></div><div class='bi'><div class='bl' style='width:250px;'>All other stories</div><div class='bt'><div class='bf' style='width:25%;background:var(--red);'></div></div><div class='bv'>8</div></div></div></div>
+   <div class="data-card"><div class="dc-title">Largest outlets by estimated reach</div><div class='comp-item'><span><em>Forbes</em></span><span style='font-weight:700;'>43.4M</span></div><div class='comp-item'><span><em>Yahoo! News</em></span><span style='font-weight:700;'>27.7M</span></div><div class='comp-item'><span><em>Clarin</em></span><span style='font-weight:700;'>22.6M</span></div><div class='comp-item'><span><em>AOL</em></span><span style='font-weight:700;'>19.5M</span></div><div class='comp-item'><span><em>Medscape</em></span><span style='font-weight:700;'>6.0M</span></div><div class='comp-item'><span><em>Boursorama</em></span><span style='font-weight:700;'>3.4M</span></div></div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Placements</div>
+  <div class="section-title">Where APA Is the Story</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Date</th><th>Outlet</th><th>Headline</th><th>Author</th><th>APA voice</th><th class="num">Est. reach</th></tr></thead>
+   <tbody><tr><td>Sept 16</td><td><em>Forbes</em></td><td><a href="https://www.forbes.com/sites/tedreed/2026/09/16/american-airlines-is-upgrading-but-pilots-say-it-needs-a-new-ceo/">American Airlines Is Upgrading But Pilots Say It Needs A New CEO</a></td><td>Ted Reed</td><td>Silva quoted</td><td class='num'>43.4M</td></tr>
+<tr><td>Sept 16</td><td><em>The Dallas Morning News</em></td><td><a href="https://www.dallasnews.com/business/airlines/article/american-airlines-pilots-board-of-directors-22402789.php">American Airlines pilots union blasts CEO&#x27;s leadership</a></td><td>Jordan Parker</td><td>Silva quoted</td><td class='num'>2.8M</td></tr>
+<tr><td>Sept 16</td><td><em>View from the Wing</em></td><td><a href="https://viewfromthewing.com/why-american-airlines-pilots-union-is-calling-for-a-new-ceo-even-as-he-makes-changes-it-wanted/">Why American Airlines’ Pilots Union Is Calling For A New CEO—Even As He Makes Changes It Wanted</a></td><td>Gary Leff</td><td>Silva quoted</td><td class='num'>596K</td></tr>
+<tr><td>Sept 16</td><td><em>InsideFlyer</em></td><td><a href="https://www.insideflyer.com/posts/pilot-union-seeks-new-american-airlines-ceo-amid-contract-talks/">Pilot union seeks new American Airlines CEO amid contract talks</a></td><td>&mdash;</td><td>Union referenced</td><td class='num'>93K</td></tr>
+<tr><td>Sept 16</td><td><em>Air Traffic Controller</em></td><td><a href="https://natca.org/2026/09/16/cfs-2026-joseph-gettler-earns-the-allied-pilots-association-resolute-safety-award/">CFS 2026: Joseph Gettler Earns the Allied Pilots Association Resolute Safety Award</a></td><td>&mdash;</td><td>APA award</td><td class='num'>18K</td></tr>
+<tr><td>Sept 16</td><td><em>Particle News</em></td><td><a href="https://particle.news/story/american-pilots-leader-publicly-challenges-ceo-as-union-opens-early-contract-talks">American Pilots’ Leader Publicly Challenges CEO as Union Opens Early Contract Talks</a></td><td>&mdash;</td><td>Silva quoted</td><td class='num'>16K</td></tr>
+<tr><td>Sept 16</td><td><em>Aviation News Online</em></td><td><a href="https://www.aviationnews-online.com/article/american-pilots-union-questions-leadership-as-profit-gap-persists-seo-summary-american-airlines-pilots-union-has-intensified-criticism-of-chi">American pilots union questions leadership as profit gap persists</a></td><td>Justin Pugsley</td><td>Silva quoted</td><td class='num'>12K</td></tr>
+<tr><td>Sept 17</td><td><em>Aviation A2Z</em></td><td><a href="https://aviationa2z.com/index.php/2026/09/18/american-airlines-pilots-turn-up-pressure-on-ceo-robert-isom/">American Airlines Pilots Turn Up Pressure on CEO Robert Isom</a></td><td>Kevin Derby</td><td>Silva quoted</td><td class='num'>1.6M</td></tr>
+<tr><td>Sept 17</td><td><em>One Mile at a Time</em></td><td><a href="https://onemileatatime.com/insights/american-airlines-pilots-union-right-sorry-view-from-the-wing/">Actually, American Airlines’ Pilots Union Is Right: Sorry, View From The Wing</a></td><td>Ben Schlappig</td><td>Silva quoted</td><td class='num'>1.1M</td></tr>
+<tr><td>Sept 17</td><td><em>Live and Let&#x27;s Fly</em></td><td><a href="https://liveandletsfly.com/american-airlines-pilots-robert-isom-blogger-debate/">American Airlines Pilots Question Robert Isom…And The Bloggers Take Sides</a></td><td>Matthew Klint</td><td>Silva quoted</td><td class='num'>700K</td></tr>
+<tr><td>Sept 17</td><td><em>InsideFlyer</em></td><td><a href="https://www.insideflyer.com/posts/american-pilots-question-ceo-as-contract-talks-begin/">American pilots question CEO as contract talks begin</a></td><td>&mdash;</td><td>Silva quoted</td><td class='num'>93K</td></tr>
+</tbody></table></div>
+   <div class="tbl-cap">Ten of these eleven follow Capt. Silva&rsquo;s comments to <em>The Dallas Morning News</em> (Jordan Parker, Sept 16) questioning whether CEO Robert Isom should lead the airline. The coverage split: <em>View from the Wing</em> questioned the union&rsquo;s position, <em>One Mile at a Time</em> sided with it and <em>Live and Let&rsquo;s Fly</em> covered the disagreement. &ldquo;Union referenced&rdquo; means the piece is about APA&rsquo;s campaign but the excerpt Meltwater captured doesn&rsquo;t quote Capt. Silva. Headlines and dates are as Meltwater recorded them. Dates are Central time and can differ by a day from an outlet&rsquo;s own dateline.</div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Placements</div>
+  <div class="section-title">APA Mentioned Within Broader Coverage</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Story</th><th>Dates</th><th class="num">Placements</th><th>APA&rsquo;s role</th><th>What the pieces are actually about</th><th class="num">Est. reach</th></tr></thead>
+   <tbody><tr><td><strong>9/11 25th anniversary</strong></td><td>Sept 5&ndash;11</td><td class='num'>32</td><td>Capt. Dennis Tajer quoted</td><td><em>The Dallas Morning News</em> (Jordan Parker) on airline workers remembering 9/11, syndicated across McClatchy papers and <em>Yahoo! News</em>; also a <em>Peter Greenberg Worldwide</em> segment and a <em>Community Impact</em> photo gallery naming DFW Domicile Chair Capt. Brian Smith</td><td class='num'>45.5M</td></tr>
+<tr><td><strong>Senate mental-health bills</strong></td><td>Sept 24&ndash;29</td><td class='num'>32</td><td>Capt. Nick Silva quoted</td><td>Senate passage of the Hoeven&ndash;Duckworth bills on pilot and air traffic controller mental health (Reuters, David Shepardson), plus the Senate press release and French, German and Portuguese pickup</td><td class='num'>56.5M</td></tr>
+<tr><td><strong>Former Fox anchor&rsquo;s seat complaint</strong></td><td>Sept 16&ndash;18</td><td class='num'>10</td><td>Silva&rsquo;s CEO criticism cited as background</td><td>A passenger complaint by Melissa Francis, carried almost entirely by low-traffic aggregator sites</td><td class='num'>153K</td></tr>
+<tr><td><strong>&ldquo;Meowing&rdquo; pilots and Sen. Tuberville</strong></td><td>Sept 11&ndash;25</td><td class='num'>5</td><td>Tajer quoted as APA spokesman</td><td>Pilots making animal noises on the radio and Sen. Tommy Tuberville&rsquo;s comments about it (<em>Clar&iacute;n</em> Sept 11; <em>Mediaite</em> Sept 25, carried by <em>Yahoo! News</em> and <em>AOL</em>)</td><td class='num'>72.8M</td></tr>
+<tr><td><strong>Pilot contract and Austin</strong></td><td>Sept 17&ndash;18</td><td class='num'>2</td><td>APA contract and Section 6 status cited</td><td>How job protections in American&rsquo;s pilot contract affect its competition with Delta in Austin</td><td class='num'>2.2M</td></tr>
+<tr><td><strong>Jet bridge confrontation</strong></td><td>Sept 27&ndash;28</td><td class='num'>2</td><td>Pilot identified by his APA lanyard</td><td>A viral video of an American pilot and an airport worker</td><td class='num'>2.2M</td></tr>
+<tr><td><strong>Political giving</strong></td><td>Sept 14&ndash;23</td><td class='num'>2</td><td>APA PAC listed as a donor</td><td>Donors to members of Congress (<em>Straight Arrow News</em>) and an Indiana voter guide (WFYI)</td><td class='num'>489K</td></tr>
+<tr><td><strong>Gulf carrier subsidies</strong></td><td>Sept 18</td><td class='num'>1</td><td>APA named in a labor lobbying coalition</td><td>Emirates responding to subsidy claims</td><td class='num'>3K</td></tr>
+<tr><td><strong>Aviation news roundup</strong></td><td>Sept 16</td><td class='num'>1</td><td>Silva quoted</td><td>A daily link roundup (<em>Eye on L.A. Aviation</em>) repeating the Sept 16 leadership story</td><td class='num'>&mdash;</td></tr>
+</tbody></table></div>
+   <div class="tbl-cap">These 87 placements count toward the totals above but are kept separate so that passing mentions don&rsquo;t inflate the reach of stories where APA is the focus. The full placement list, with every headline, outlet and link, is in the accompanying workbook.</div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Tone</div>
+  <div class="section-title">Sentiment and Share of Voice</div>
+  <div class="split">
+   <div class="data-card"><div class="dc-title">Meltwater automated sentiment (98 placements)</div>
+    <div class="comp-item"><span>Negative</span><span style="font-weight:700;">50</span></div>
+    <div class="comp-item"><span>Neutral</span><span style="font-weight:700;">45</span></div>
+    <div class="comp-item"><span>Positive</span><span style="font-weight:700;">3</span></div>
+    <div class="note">Treat this as a rough tone signal, not a reputation score. Meltwater scores 20 of the 32 Senate-bill placements negative, but the Reuters story reports Capt. Silva supporting the legislation. Most of the negative scores on the leadership stories reflect APA&rsquo;s criticism of management, which is the message APA chose to deliver.</div>
+   </div>
+   <div class="data-card"><div class="dc-title">Share of voice vs. ALPA</div>
+    <p class="prose" style="font-size:14px;">Not measured this month. September&rsquo;s Meltwater searches don&rsquo;t include a general ALPA volume search. The &ldquo;ALPA Merger Chatter&rdquo; search tracks only APA&ndash;ALPA merger talk (7 mentions, all already counted elsewhere). Adding a standing ALPA search, run the same way each month, would make this comparison possible from October on.</p>
+   </div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Coverage notes</div>
+  <div class="section-title">Worth Knowing</div>
+  <div class="rec-list">
+   <div class="rec-item"><div class="rec-num">01</div><div><div class="rec-title">The pilot contract drew competitive framing</div><div class="rec-text"><em>View from the Wing</em> (Sept 17) and <em>Aviation A2Z</em> (Sept 18) both argued that job protections in American&rsquo;s pilot contract are making Austin harder for American to win against Delta. The <em>Aviation A2Z</em> piece also notes APA formally entered Section 6 negotiations on Aug 7.</div></div></div>
+   <div class="rec-item"><div class="rec-num">02</div><div><div class="rec-title">APA&rsquo;s political giving appeared in coverage</div><div class="rec-text"><em>Straight Arrow News</em> (Sept 14) listed the APA PAC among donors to lawmakers in a story about remarks on Islam. WFYI&rsquo;s Indiana voter guide (Sept 23) named APA among a candidate&rsquo;s two largest special-interest donors.</div></div></div>
+   <div class="rec-item"><div class="rec-num">03</div><div><div class="rec-title">Aggregator sites recycled the leadership story</div><div class="rec-text">Ten placements came from low-traffic aggregator sites that folded Capt. Silva&rsquo;s criticism into a story about a passenger complaint. Together they account for about 153K of estimated reach, and seven report none.</div></div></div>
+  </div>
+ </div>
+</div></div>
+<div id="page-listening" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">Social Listening</div>
+ <div class="section-title">Public Conversation</div>
+ <div class="draft-flag">Draft &mdash; data through Sept 30, 2026</div>
+ <div class="source-line">Hootsuite Listening &mdash; project &ldquo;Insights,&rdquo; topic &ldquo;Allied Pilots Association&rdquo; &mdash; Sept 1&ndash;30, 2026 (vs. Aug 1&ndash;31) &mdash; pulled Sept 30, 2026</div>
+ <div class="prose">
+  <p>The listening topic picked up <strong>57,664 mentions</strong> in September, up from 11,753 in August. Almost all of that growth came from the 25th anniversary of 9/11: 47,767 September mentions (83%) referenced the attacks, mostly remembrances of American Airlines Flights 11 and 77 on X. Those posts match the topic because they mention American Airlines and its pilots, not because they discuss APA.</p>
+  <p>Set 9/11 aside and the conversation about American&rsquo;s pilots, their contract and the company&rsquo;s leadership held roughly steady (3,362 mentions vs. 3,643 in August), while its tone improved. Negative mentions fell from 24% of that conversation to 15%. It peaked on Sept 17, the day after Capt. Silva&rsquo;s comments to <em>The Dallas Morning News</em>.</p>
+ </div>
+ <div class="kpi-strip">
+  <div class="kpi"><div class="kpi-label">Total topic mentions</div><div class="kpi-value">57,664</div><div class="kpi-sub">+391% vs. Aug (11,753)</div></div>
+  <div class="kpi"><div class="kpi-label">Pilot, contract &amp; leadership talk</div><div class="kpi-value">3,362</div><div class="kpi-sub">-8% vs. Aug &middot; excludes 9/11</div></div>
+  <div class="kpi"><div class="kpi-label">Negative share of that talk</div><div class="kpi-value">15%</div><div class="kpi-sub">Down from 24% in Aug</div></div>
+  <div class="kpi"><div class="kpi-label">Mentions naming APA or its leaders</div><div class="kpi-value">75</div><div class="kpi-sub">-14% vs. Aug (87)</div></div>
+ </div>
+ <div class="note"><strong>Scope:</strong> the topic counts any public post that names APA or the Allied Pilots Association, plus posts pairing American Airlines with pilot, contract, union, scheduling or ALPA terms. It is broader than APA by name, which is why 9/11 remembrances of American flights dominate this month. The two narrower slices above were run inside the same topic: &ldquo;pilot, contract &amp; leadership talk&rdquo; requires an American Airlines, AA pilots or APA reference together with contract, Section 6, negotiation, union, Isom, Aggressive Pick-Up or ALPA, and excludes 9/11 terms. &ldquo;Mentions naming APA or its leaders&rdquo; requires &ldquo;Allied Pilots Association,&rdquo; &ldquo;Nick Silva,&rdquo; &ldquo;Dennis Tajer&rdquo; or @alliedpilots. Sentiment is Hootsuite&rsquo;s automated scoring.</div>
+
+ <div class="report-section">
+  <div class="section-number">Breakdown</div>
+  <div class="section-title">What Drove the Volume</div>
+  <div class="split">
+   <div class="data-card"><div class="dc-title">September mentions by conversation</div><div class="bar-rows"><div class='bi'><div class='bl' style='width:220px;'>9/11 remembrance</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>47,767</div></div><div class='bi'><div class='bl' style='width:220px;'>Pilot, contract &amp; leadership</div><div class='bt'><div class='bf' style='width:7%;background:var(--red);'></div></div><div class='bv'>3,362</div></div><div class='bi'><div class='bl' style='width:220px;'>Everything else in the topic</div><div class='bt'><div class='bf' style='width:14%;background:var(--red);'></div></div><div class='bv'>6,535</div></div></div>
+    <div class="note">X (Twitter) accounted for 51,395 of September&rsquo;s mentions (89%). 9/11 mentions spiked on Sept 1&ndash;3, Sept 5&ndash;6 and Sept 11&ndash;12, then fell below 250 a day from Sept 14 on.</div></div>
+   <div class="data-card"><div class="dc-title">Tone of pilot, contract &amp; leadership talk</div>
+    <div class="tbl-wrap"><table><thead><tr><th></th><th class="num">August</th><th class="num">September</th></tr></thead><tbody>
+     <tr><td>Positive</td><td class="num">321 (9%)</td><td class="num">395 (12%)</td></tr>
+     <tr><td>Neutral</td><td class="num">2,448 (67%)</td><td class="num">2,457 (73%)</td></tr>
+     <tr><td>Negative</td><td class="num">874 (24%)</td><td class="num">510 (15%)</td></tr>
+    </tbody></table></div>
+    <div class="note">Mentions naming APA or its leaders: 19 positive, 46 neutral and 10 negative in September, compared with 3, 80 and 4 in August. These are small counts, so read the change as direction only.</div></div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Themes</div>
+  <div class="section-title">What People Discussed</div>
+  <div class="rec-list">
+   <div class="rec-item"><div class="rec-num">01</div><div><div class="rec-title">The leadership critique</div><div class="rec-text">Hootsuite&rsquo;s summary of the pilot and contract conversation centers on Capt. Silva&rsquo;s questioning of American&rsquo;s leadership and the blog debate that followed (<em>View from the Wing</em> and <em>Live and Let&rsquo;s Fly</em> both read it as positioning ahead of contract talks). Daily volume peaked at 274 mentions on Sept 17.</div></div></div>
+   <div class="rec-item"><div class="rec-num">02</div><div><div class="rec-title">The contract&rsquo;s effect on Austin</div><div class="rec-text">The same summary picks up <em>View from the Wing</em>&rsquo;s argument that limits in the current pilot contract are slowing American&rsquo;s growth in Austin against Delta. This also appears on the PR tab.</div></div></div>
+   <div class="rec-item"><div class="rec-num">03</div><div><div class="rec-title">9/11 remembrance</div><div class="rec-text">The largest theme by far: remembrances of the crews of American Flights 11 and 77, including Capt. John Ogonowski and First Officer Thomas McGuinness, whom APA also profiled on its own channels.</div></div></div>
+  </div>
+  <div class="note">The accounts posting most often in the topic this month were news aggregators and high-volume X accounts, not pilot voices, so they aren&rsquo;t listed as influencers. The query still pulls in some unrelated posts (for example, World War II &ldquo;Allied pilots&rdquo;). Tightening it is on the Insights tab.</div>
+ </div>
+</div></div><div id="page-seo" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">SEO</div>
+ <div class="section-title">Search Visibility</div>
+ <div class="draft-flag">Draft &mdash; pulled Sept 30, 2026</div>
+ <div class="source-line">Semrush &mdash; Domain Overview, Organic Research and Backlink Analytics for alliedpilots.org (US database) &mdash; pulled Sept 30, 2026</div>
+ <div class="prose"><p>APA&rsquo;s search position is stable and slightly stronger than in August. Every core branded search, including &ldquo;allied pilots association,&rdquo; &ldquo;apa pilots&rdquo; and &ldquo;allied pilots union,&rdquo; still returns alliedpilots.org first. Semrush&rsquo;s traffic estimate rose 9%, and the number of sites linking to APA rose 6%.</p></div>
+ <div class="kpi-strip">
+  <div class="kpi"><div class="kpi-label">Est. monthly organic visits</div><div class="kpi-value">8,921</div><div class="kpi-sub">+9% vs. Aug (8,179) &middot; estimate</div></div>
+  <div class="kpi"><div class="kpi-label">Ranking keywords</div><div class="kpi-value">879</div><div class="kpi-sub">+6 vs. Aug (873)</div></div>
+  <div class="kpi"><div class="kpi-label">Keywords on page 1</div><div class="kpi-value">183</div><div class="kpi-sub">52 in top 3 &middot; up from 156 in Aug</div></div>
+  <div class="kpi"><div class="kpi-label">Referring domains</div><div class="kpi-value">1,618</div><div class="kpi-sub">+90 vs. Aug 1 &middot; Authority Score 35 (was 34)</div></div>
+ </div>
+ <div class="note">Traffic, keyword and page-1 figures come from Semrush Domain Overview: the latest snapshot compared with the Aug 15 snapshot. Organic visits are Semrush&rsquo;s modeled estimate, not measured site traffic. Measured traffic will come from GA4 once it&rsquo;s connected. Referring domains and Authority Score come from Backlink Analytics monthly history (Sept 1 vs. Aug 1). The position-tracking campaign on the Semrush project returned no data, so branded positions below come from Organic Research.</div>
+ <div class="report-section">
+  <div class="section-number">Rankings</div>
+  <div class="section-title">Branded Searches</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Search term</th><th class="num">Monthly searches</th><th class="num">Position</th><th class="num">Last month</th><th>Ranking page</th></tr></thead><tbody>
+   <tr><td>allied pilots association</td><td class="num">2,900</td><td class="num">1</td><td class="num">1</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>apa pilots</td><td class="num">1,900</td><td class="num">1</td><td class="num">1</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>allied pilots</td><td class="num">1,900</td><td class="num">1</td><td class="num">1</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>apa union</td><td class="num">1,300</td><td class="num">1</td><td class="num">1</td><td>/memberhome</td></tr>
+   <tr><td>alliedpilots</td><td class="num">880</td><td class="num">1</td><td class="num">1</td><td>/memberhome</td></tr>
+   <tr><td>allied pilots union</td><td class="num">480</td><td class="num">1</td><td class="num">1</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>aa pilots</td><td class="num">880</td><td class="num">4</td><td class="num">4</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>american airlines pilots</td><td class="num">390</td><td class="num">6</td><td class="num">6</td><td>/Public-Pages/Public/About</td></tr>
+   <tr><td>pilot union news</td><td class="num">480</td><td class="num">4</td><td class="num">4</td><td>/news</td></tr>
+   </tbody></table></div>
+   <div class="tbl-cap">No position changed from last month. Monthly search volumes are Semrush US estimates.</div></div>
+ </div>
+ <div class="report-section">
+  <div class="section-number">Site health</div>
+  <div class="section-title">Items for APA&rsquo;s Web Team</div>
+  <div class="rec-list">
+   <div class="rec-item"><div class="rec-num">01</div><div><div class="rec-title">Test sites are showing up in Google</div><div class="rec-text">Semrush finds Google ranking pages on www.uat.alliedpilots.org (31 keywords) and www.integ.alliedpilots.org (46 keywords), which look like testing and integration copies of the site. They draw very little traffic, but they probably shouldn&rsquo;t be public or indexed. This is worth confirming with IT.</div></div></div>
+   <div class="rec-item"><div class="rec-num">02</div><div><div class="rec-title">A benefits PDF ranks for health-plan searches</div><div class="rec-text">A Luminare Health welcome PDF on sharedcdn.alliedpilots.org ranks on page 1 for &ldquo;luminare&rdquo; (3,600 monthly searches) and related terms. If the document is meant for members only, it may be worth moving it behind the login.</div></div></div>
+  </div>
+ </div>
+</div></div><div id="page-social" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">Social Media</div>
+ <div class="section-title">APA&rsquo;s Own Channels</div>
+ <div class="draft-flag">Draft &mdash; data through Sept 29, 2026</div>
+ <div class="source-line">Hootsuite Analytics export &mdash; Facebook, Instagram and LinkedIn &mdash; Sept 1&ndash;29, 2026 &mdash; exported Sept 30, 2026</div>
+ <div class="prose"><p>APA published 34 posts across Facebook, Instagram and LinkedIn, which drew 32,130 engagements and 492,682 impressions. Two kinds of content did most of the work: the 9/11 anniversary series, which produced the month&rsquo;s biggest reach, and member-life posts (new-hire dinners and domicile ballgames), which drew the highest engagement per post. Section 6 content, including the new &ldquo;Meet the Negotiators&rdquo; series and Capt. Silva&rsquo;s <em>Dallas Morning News</em> quote, landed in the middle.</p></div>
+ <div class="kpi-strip">
+  <div class="kpi"><div class="kpi-label">Posts published</div><div class="kpi-value">34</div><div class="kpi-sub">Facebook 19 &middot; Instagram 13 &middot; LinkedIn 2</div></div>
+  <div class="kpi"><div class="kpi-label">Total engagements</div><div class="kpi-value">32,130</div><div class="kpi-sub">Baseline month</div></div>
+  <div class="kpi"><div class="kpi-label">Total impressions</div><div class="kpi-value">492,682</div><div class="kpi-sub">Baseline month</div></div>
+  <div class="kpi"><div class="kpi-label">Followers, end of month</div><div class="kpi-value">21,830</div><div class="kpi-sub">FB 12,566 &middot; IG 5,606 &middot; LI 3,658</div></div>
+ </div>
+ <div class="note">This is the first month with a full Hootsuite export, so there are no month-over-month deltas yet. Follower growth within the month: Facebook +147 (12,419 to 12,566) and Instagram +153 (5,453 to 5,606). LinkedIn follower counts start Sept 23 and only two LinkedIn posts were captured, so LinkedIn is shown for reference only. X and YouTube are not in the export.</div>
+ <div class="report-section">
+  <div class="section-number">By platform</div>
+  <div class="section-title">How Each Channel Performed</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Platform</th><th class="num">Posts</th><th class="num">Impressions</th><th class="num">Engagements</th><th class="num">Engagements per post</th><th class="num">Median engagement rate</th></tr></thead><tbody>
+   <tr><td>Facebook</td><td class="num">19</td><td class="num">346,443</td><td class="num">27,689</td><td class="num">1,457</td><td class="num">9.7%</td></tr>
+   <tr><td>Instagram</td><td class="num">13</td><td class="num">143,359</td><td class="num">4,378</td><td class="num">337</td><td class="num">4.1%</td></tr>
+   <tr><td>LinkedIn (partial month)</td><td class="num">2</td><td class="num">2,880</td><td class="num">63</td><td class="num">32</td><td class="num">3.2%</td></tr>
+   </tbody></table></div>
+   <div class="tbl-cap">Engagement rate is Hootsuite&rsquo;s per-post figure. The median is shown because one post (the Sept 23 new-hire dinners, 58.7%) would skew an average.</div></div>
+ </div>
+ <div class="report-section">
+  <div class="section-number">By content</div>
+  <div class="section-title">What Resonated</div>
+  <div class="split">
+   <div class="data-card"><div class="dc-title">Engagements per post by theme (all platforms)</div><div class="bar-rows"><div class='bi'><div class='bl' style='width:260px;'>Member events and new hires (5 posts)</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>1,952</div></div><div class='bi'><div class='bl' style='width:260px;'>9/11 remembrance (16 posts)</div><div class='bt'><div class='bf' style='width:58%;background:var(--red);'></div></div><div class='bv'>1,129</div></div><div class='bi'><div class='bl' style='width:260px;'>Section 6 and leadership (6 posts)</div><div class='bt'><div class='bf' style='width:33%;background:var(--red);'></div></div><div class='bv'>648</div></div><div class='bi'><div class='bl' style='width:260px;'>Bidding and scheduling alerts (4 posts)</div><div class='bt'><div class='bf' style='width:4%;background:var(--red);'></div></div><div class='bv'>73</div></div><div class='bi'><div class='bl' style='width:260px;'>Labor Day (3 posts)</div><div class='bt'><div class='bf' style='width:2%;background:var(--red);'></div></div><div class='bv'>40</div></div></div>
+    <div class="note">Facebook drives most engagement, so themes posted mainly to Facebook score higher. Treat this as a ranking of themes, not a platform comparison.</div></div>
+   <div class="data-card"><div class="dc-title">Worth noting</div>
+    <div class="comp-item"><span>Best engagement rate</span><span style="font-weight:700;">New-hire dinners, 58.7%</span></div>
+    <div class="comp-item"><span>Largest reach</span><span style="font-weight:700;">9/11 profiles, 147.6K impressions</span></div>
+    <div class="comp-item"><span>Strongest Section 6 post</span><span style="font-weight:700;">Silva quote, 22.4%</span></div>
+    <div class="comp-item"><span>New series</span><span style="font-weight:700;">Meet the Negotiators, 36.1% on FB</span></div>
+    <div class="comp-item"><span>Lowest engagement</span><span style="font-weight:700;">Bidding alerts, ~73 per post</span></div>
+   </div>
+  </div>
+ </div>
+ <div class="report-section">
+  <div class="section-number">Top posts</div>
+  <div class="section-title">Highest-Engagement Posts</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Date</th><th>Platform</th><th>Post</th><th class="num">Engagements</th><th class="num">Eng. rate</th><th class="num">Impressions</th></tr></thead><tbody><tr><td>Sept 23</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1711225171006962">APA recently welcomed four more new-hire classes to union headquarters for barbecue dinners&hellip;</a></td><td class='num'>7,265</td><td class='num'>58.7%</td><td class='num'>23,065</td></tr><tr><td>Sept 10</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1697908265671986">With the 25th anniversary of the 9/11 attacks approaching, we pause to remember the APA&hellip;</a></td><td class='num'>6,574</td><td class='num'>6.4%</td><td class='num'>147,635</td></tr><tr><td>Sept 11</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1698933578902788">With the 25th anniversary of the 9/11 attacks approaching, we pause to remember the APA&hellip;</a></td><td class='num'>2,626</td><td class='num'>7.3%</td><td class='num'>55,779</td></tr><tr><td>Sept 16</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1704667181662761">“The pool of talent to lead airlines seems to be relatively small” APA President CA Nick Silva&hellip;</a></td><td class='num'>1,983</td><td class='num'>22.4%</td><td class='num'>16,479</td></tr><tr><td>Sept 10</td><td>Instagram</td><td><a href="https://www.instagram.com/p/DdFf75LDWde/">With the 25th anniversary of the 9/11 attacks approaching, we pause to remember the APA&hellip;</a></td><td class='num'>1,856</td><td class='num'>4.1%</td><td class='num'>65,378</td></tr><tr><td>Sept 26</td><td>Facebook</td><td><a href="https://www.facebook.com/reel/1102979535669742/">The first member of the Negotiating Committee featured in our “Meet the Negotiators” series is&hellip;</a></td><td class='num'>1,668</td><td class='num'>36.1%</td><td class='num'>7,920</td></tr><tr><td>Sept 11</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1699505838845562">DCA Domicile Vice Chair CA Thomas Lawler represented APA during a Sept. 9 ceremony at the&hellip;</a></td><td class='num'>1,635</td><td class='num'>14.3%</td><td class='num'>17,442</td></tr><tr><td>Sept 4</td><td>Facebook</td><td><a href="https://www.facebook.com/303044038491756/posts/1692806036182209">MIA pilots and their guests gathered at a Tampa Bay Rays game on Sept. 2.</a></td><td class='num'>1,322</td><td class='num'>21.6%</td><td class='num'>9,678</td></tr></tbody></table></div>
+   <div class="tbl-cap">Dates are GMT as recorded by Hootsuite.</div></div>
+ </div>
+</div></div><div id="page-poll" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">Poll Results</div>
+ <div class="section-title">Member Survey &mdash; September 2025 Baseline</div>
+ <div class="source-line">UNH Survey Center &mdash; &ldquo;APA Survey September 2025 &mdash; Dashboard&rdquo; &mdash; fielded Sept 2&ndash;16, 2025 &mdash; 901 completed interviews &mdash; 79% response rate</div>
+ <div class="prose"><p>This is the most recent member survey. No new wave was fielded in September 2026, so these results are shown as the baseline for the UNH poll expected in October. Figures are UNH&rsquo;s own, as printed on the dashboard slides, and question wording is quoted as UNH wrote it. UNH&rsquo;s respondent profile closely matches the full membership by age, base, division, equipment, seniority and seat.</p></div>
+ <div class="kpi-strip">
+  <div class="kpi"><div class="kpi-label">Say APA is good value</div><div class="kpi-value">81%</div><div class="kpi-sub">Up from 77% (Feb 2025) and 75% (Jan 2024)</div></div>
+  <div class="kpi"><div class="kpi-label">Overall view of APA positive</div><div class="kpi-value">51%</div><div class="kpi-sub">Up from 48% (Feb 2025), down from 60% (Jan 2024)</div></div>
+  <div class="kpi"><div class="kpi-label">Rate BOD communication good</div><div class="kpi-value">58%</div><div class="kpi-sub">Down from 77% in Feb 2025</div></div>
+  <div class="kpi"><div class="kpi-label">Scheduling rules #1 priority</div><div class="kpi-value">60%</div><div class="kpi-sub">80% rank it first or second</div></div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Takeaways</div>
+  <div class="section-title">What the Survey Tells Us</div>
+  <div class="rec-list">
+   <div class="rec-item"><div class="rec-num">01</div><div><div class="rec-title">Members value APA, but feel less informed by the Board</div><div class="rec-text">81% said APA&rsquo;s services and representation are a very good or good value. But only 58% rated the Board of Directors&rsquo; communication and keeping members informed as very good or good, down 19 points from 77% in February 2025. That rating fell in every age, base, seat and seniority group UNH reported. It is the survey&rsquo;s most direct measure of the &ldquo;informed&rdquo; half of APA&rsquo;s objective.</div></div></div>
+   <div class="rec-item"><div class="rec-num">02</div><div><div class="rec-title">Overall sentiment is recovering but hasn&rsquo;t returned to 2024 levels</div><div class="rec-text">51% viewed APA very positively or positively, up from 48% in February 2025 but below 60% in January 2024. 18% were negative. Among negative respondents, the leading reasons were poor contract negotiations (23%), &ldquo;corruption and self-serving leadership&rdquo; (19%) and lack of representation and listening to members (15%). Among positive respondents, the top reason was the union&rsquo;s focus on pilot interests (21%).</div></div></div>
+   <div class="rec-item"><div class="rec-num">03</div><div><div class="rec-title">Scheduling, not pay rates, is the top contract priority</div><div class="rec-text">60% named scheduling rules as the most important thing to improve in bargaining, and 80% ranked it first or second. Compensation was first for 18% (46% first or second). Within scheduling, improved pairing quality led at 47%. Within pay, trip and duty rigs led at 38% (61% first or second), ahead of hourly rates (26%).</div></div></div>
+   <div class="rec-item"><div class="rec-num">04</div><div><div class="rec-title">Members want a better deal over a faster one</div><div class="rec-text">55% disagreed that it is better to reach a deal sooner with fewer changes (29% agreed). 73% disagreed with securing a contract first so APA can re-enter talks sooner &ldquo;even if it means we set the market,&rdquo; and 61% agreed it is better to let other carriers ratify first. Junior pilots hold this view most strongly: 76% of 31-to-40-year-olds rejected a faster, smaller deal, compared with 36% of pilots 61 and older.</div></div></div>
+   <div class="rec-item"><div class="rec-num">05</div><div><div class="rec-title">Support for &ldquo;spreading the wealth&rdquo; on premium flying is rising</div><div class="rec-text">64% agreed with scheduling changes that would &ldquo;spread the wealth,&rdquo; such as Seniority in Turn for Premium, up from 49% in September 2024. Agreement that the most senior pilots should always get first opportunity at premium sequences slipped from 59% to 53%. This is the fault line behind Aggressive Pick-Up, and it splits by seniority.</div></div></div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Priorities</div>
+  <div class="section-title">Bargaining Priorities</div>
+  <div class="split">
+   <div class="data-card"><div class="dc-title">Most or second-most important to improve</div><div class="bar-rows"><div class='bi'><div class='bl' style='width:230px;'>Scheduling rules</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>80%</div></div><div class='bi'><div class='bl' style='width:230px;'>Compensation</div><div class='bt'><div class='bf' style='width:57%;background:var(--red);'></div></div><div class='bv'>46%</div></div><div class='bi'><div class='bl' style='width:230px;'>Scope</div><div class='bt'><div class='bf' style='width:30%;background:var(--red);'></div></div><div class='bv'>24%</div></div><div class='bi'><div class='bl' style='width:230px;'>Sick or disability benefits</div><div class='bt'><div class='bf' style='width:20%;background:var(--red);'></div></div><div class='bv'>16%</div></div><div class='bi'><div class='bl' style='width:230px;'>Hotels</div><div class='bt'><div class='bf' style='width:14%;background:var(--red);'></div></div><div class='bv'>11%</div></div><div class='bi'><div class='bl' style='width:230px;'>Check/Instructor Pilot work rules</div><div class='bt'><div class='bf' style='width:11%;background:var(--red);'></div></div><div class='bv'>9%</div></div><div class='bi'><div class='bl' style='width:230px;'>Arbitration language</div><div class='bt'><div class='bf' style='width:10%;background:var(--red);'></div></div><div class='bv'>8%</div></div><div class='bi'><div class='bl' style='width:230px;'>Jumpseat and deadheading</div><div class='bt'><div class='bf' style='width:5%;background:var(--red);'></div></div><div class='bv'>4%</div></div></div></div>
+   <div class="data-card"><div class="dc-title">Aspects of pay: most or second-most important</div><div class="bar-rows"><div class='bi'><div class='bl' style='width:200px;'>Trip and duty rigs</div><div class='bt'><div class='bf' style='width:100%;background:var(--red);'></div></div><div class='bv'>61%</div></div><div class='bi'><div class='bl' style='width:200px;'>Hourly pay rates</div><div class='bt'><div class='bf' style='width:82%;background:var(--red);'></div></div><div class='bv'>50%</div></div><div class='bi'><div class='bl' style='width:200px;'>Profit sharing</div><div class='bt'><div class='bf' style='width:66%;background:var(--red);'></div></div><div class='bv'>40%</div></div><div class='bi'><div class='bl' style='width:200px;'>Premium pay</div><div class='bt'><div class='bf' style='width:33%;background:var(--red);'></div></div><div class='bv'>20%</div></div><div class='bi'><div class='bl' style='width:200px;'>401(k) and retirement</div><div class='bt'><div class='bf' style='width:26%;background:var(--red);'></div></div><div class='bv'>16%</div></div><div class='bi'><div class='bl' style='width:200px;'>Overrides</div><div class='bt'><div class='bf' style='width:20%;background:var(--red);'></div></div><div class='bv'>12%</div></div></div>
+    <div class="note">Other scheduling and pay results: 57% disagreed with a credit threshold for premium pay (32% agreed), and 47% disagreed with a credit floor (40% agreed). 67% support keeping the mandatory retirement age at 65.</div></div>
+  </div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Context</div>
+  <div class="section-title">APA&ndash;ALPA Merger Questions (September 2025)</div>
+  <div class="data-card"><div class="tbl-wrap"><table>
+   <thead><tr><th>Question (UNH wording, shortened)</th><th class="num">Result</th><th>Note</th></tr></thead><tbody>
+   <tr><td>Support negotiating a merger with ALPA, subject to BOD approval and a membership ratification vote</td><td class='num'><strong>61% support</strong></td><td>27% oppose</td></tr>
+   <tr><td>Who does a better job on contract negotiations</td><td class='num'><strong>60% ALPA</strong></td><td>17% APA &middot; 21% neutral</td></tr>
+   <tr><td>Who does a better job on aeromedical services</td><td class='num'><strong>64% APA</strong></td><td>7% ALPA</td></tr>
+   <tr><td>Who does a better job on union-provided benefits</td><td class='num'><strong>42% APA</strong></td><td>19% ALPA</td></tr>
+   <tr><td>Believe the AA pilot group would keep its current control over negotiations and grievances in a merger</td><td class='num'><strong>51% yes</strong></td><td>47% no</td></tr>
+   <tr><td>Importance of AA pilots on most or all ALPA National Committees</td><td class='num'><strong>90% important</strong></td><td></td></tr>
+   </tbody></table></div>
+   <div class="tbl-cap">These questions reflect the merger discussions under way when the survey was fielded. Coverage this month (<em>Aviation A2Z</em>, Sept 17) reported that APA&rsquo;s merger negotiating committee said in February 2026 that it saw no path to a deal, so treat these as historical context rather than current sentiment.</div></div>
+ </div>
+
+ <div class="report-section">
+  <div class="section-number">Next wave</div>
+  <div class="section-title">What to Carry Into October&rsquo;s Poll</div>
+  <div class="prose"><p>Repeating three questions exactly as worded will give APA a clean trend line against this baseline: the overall view of APA, the value of APA&rsquo;s services and representation, and the Board&rsquo;s communication and keeping members informed. The communications benchmark questions APA proposed in July (trust in official communications, understanding of Section 6 issues, knowing where to find information and willingness to participate) would add a direct measure of whether members feel informed and engaged, which is the objective this report tracks.</p></div>
+  <div class="note">Source: UNH Survey Center dashboard slides (image format). Totals are as printed by UNH and may differ from the sum of their parts because of rounding. February 2025 comparisons come from UNH&rsquo;s own change charts. January 2024 and September 2024 figures are the first labeled points on UNH&rsquo;s trend lines. Groups with fewer than 25 respondents aren&rsquo;t cited.</div>
+ </div>
+</div></div><div id="page-web" class="page"><div class="report-body" style="padding-top:32px;">
+ <div class="section-number">Website Analytics</div>
+ <div class="section-title">alliedpilots.org</div>
+ <div class="data-card status"><div class="dc-title">Access pending</div>
+  <p class="prose" style="font-size:14px;">APA has a GA4 property, but it isn&rsquo;t yet connected to the reporting dashboard (AgencyAnalytics), and Google Search Console access still needs an IT administrator. Once both are connected, this tab will report sessions, users, engagement, top landing pages, traffic by channel and key events. It will also replace Semrush&rsquo;s modeled traffic estimate on the SEO tab with measured traffic.</p>
+ </div>
+</div></div>
+<footer class="site-footer"><div>Confidential &mdash; prepared by Allyn for Allied Pilots Association &middot; September 2026 &middot; Draft</div><div>Allyn Insights</div></footer>
+<script>
+function showPage(n,b){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.nav-btn').forEach(x=>x.classList.remove('active'));document.getElementById('page-'+n).classList.add('active');b.classList.add('active');window.scrollTo(0,0);}
+</script></body></html>
